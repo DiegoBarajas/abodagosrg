@@ -1,0 +1,22 @@
+body {
+    background-image: url(./assets/justicia-dorada.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.work-in-progress-h1 {
+    margin: 0;
+    background-color: rgba(255,255,255,.5);
+    text-align: right;
+    margin-top: 75vh;
+    padding: 20px 50px 20px 0;
+}
+
+.work-in-progress-p {
+    margin: 0;
+    background-color: rgba(255,255,255,.5);
+    text-align: right;
+    padding: 0 50px 20px 0;
+}
