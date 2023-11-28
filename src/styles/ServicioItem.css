@@ -1,0 +1,27 @@
+.ServicioItem {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, .5);
+}
+
+.ServicioItem img {
+    padding-top: 5px;
+    width: 70%;
+}
+
+.ServicioItem h4 {
+    width: 80%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    border-bottom: 2px #FFD700 solid;
+}
+
+.ServicioItem p {
+    padding: 10px;
+    margin: 5px 15px 10px 15px;
+    text-align: justify;
+}

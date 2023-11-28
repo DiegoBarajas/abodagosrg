@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavbarHidden from '../styles/NavbarHidden';
+import NavbarHidden from './NavbarHidden';
 
 import '../styles/Navbar.css';
 

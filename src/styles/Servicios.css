@@ -1,0 +1,65 @@
+#Servicios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.container-services {
+    width: 75%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 15px 20px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."
+      ". . ."; 
+}
+
+.subtitle-serv {
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+@media (max-width: 956px){
+    .container-services {
+        width: 85%
+    }
+}
+
+@media (max-width: 768px){
+    .container-services{
+        width: 80%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 15px 20px; 
+        grid-template-areas: 
+          ". ."
+          ". ."
+          ". ."
+          ". ."; 
+    }
+}
+
+@media (max-width: 480px){
+    .container-services{
+        width: 85%;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 15px 20px; 
+        grid-template-areas: 
+            "."
+            "."
+            "."
+            "."
+            "."
+            "."
+            "."
+            "."; 
+    }
+}

@@ -1,0 +1,37 @@
+.title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container h2 {
+    width: 70%;
+    border-top: 3px solid #8B0000;
+    border-bottom: 3px solid #8B0000;
+
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+}
+
+@media (max-width: 956px){
+    .title-container h2{
+        width: 75%;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px){
+    .title-container h2{
+        width: 80%;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px){
+    .title-container h2{
+        width: 85%;
+        font-size: 30px;
+    }
+}
