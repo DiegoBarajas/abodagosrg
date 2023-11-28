@@ -14,7 +14,7 @@ const Navbar = () => {
                 <input type="checkbox" id="nav-check" checked={checked} onChange={()=>setChecked(!checked)}/>
                 <div className="nav-header">
                 <div className="nav-title">
-                    <a href='#navbar' className='a-nav' onClick={()=>setChecked(false)}>RG Y ASOCIADOS</a>
+                    <a href='#banner' className='a-nav' onClick={()=>setChecked(false)}>RG Y ASOCIADOS</a>
                 </div>
                 </div>
                 <div className="nav-btn">
@@ -25,11 +25,11 @@ const Navbar = () => {
                 </label>
                 </div>
                 <div className="nav-links">
-                    <a href='#' onClick={() => setChecked(false)}>Inicio</a>
-                    <a href='#' onClick={() => setChecked(false)}>Quienes somos</a>
-                    <a href='#' onClick={() => setChecked(false)}>Servicios</a>
-                    <a href='#' onClick={() => setChecked(false)}>Contacto</a>
-                    <a href='#' onClick={() => setChecked(false)}>Ubicación</a>
+                    <a href='#banner' onClick={() => setChecked(false)}>Inicio</a>
+                    <a href='#QuienesSomos' onClick={() => setChecked(false)}>Quienes somos</a>
+                    <a href='#Servicios' onClick={() => setChecked(false)}>Servicios</a>
+                    <a href='#Contacto' onClick={() => setChecked(false)}>Contacto</a>
+                    <a href='#Ubicacion' onClick={() => setChecked(false)}>Ubicación</a>
                 </div>
             </div>
         </nav>

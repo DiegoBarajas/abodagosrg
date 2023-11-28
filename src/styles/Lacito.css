@@ -1,0 +1,71 @@
+.lacito {
+    width: 68%;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+    margin-bottom: 30px;
+
+    cursor: pointer;
+}
+
+.lacito-img {
+    height: 130px;
+    width: 130px;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 30px;
+}
+
+.lacito-img img {
+    height: 70%;
+    width: auto;
+    object-fit: contain;
+}
+
+.lacito-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lacito-content h4, .lacito-content a{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+@media (max-width: 768px){
+    .lacito { 
+        width: 80%;
+        height: 100px;
+    }
+    .lacito-img {
+        height: 100px;
+        width: 100px;
+        margin: 0px 10px 0px 20px;
+    }
+    .lacito-content h4, .lacito-content a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    .lacito { 
+        width: 90%;
+        height: 86px;
+    }
+    .lacito-img {
+        height: 86px;
+        width: 86px;
+        margin: 0px 10px 0px 11px;
+    }
+    .lacito-content h4, .lacito-content a{
+        font-size: 16px;
+    }
+}

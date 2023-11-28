@@ -3,6 +3,10 @@
     src: url('./fonts/PTSerif-Regular.ttf') format('truetype');
 }
 
+body {
+    background-color: #fafafa;
+}
+
 * {
     font-family: ptserif;
 }
