@@ -1,0 +1,167 @@
+#banner, .banner-item {
+    width: 100%;
+    height: 600px;
+}
+
+.img-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-banner-brightness{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255,255,255, 0.5);
+    position: absolute;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.title-banner h3 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+.title-banner h2 {
+    padding: 0px;
+    margin: -10px;
+    font-size: 60px;
+}
+
+.body-banner {
+    width: 60%;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 2px solid #8B0000;
+}
+
+.body-banner p {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.dots-navigator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 630px;
+}
+
+.dot-btn {
+    background-color: rgba(255,255,255, 0.5);
+    border: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    margin: 3px;
+    cursor: pointer;
+    box-shadow: 1px -1px 5px rgba(0,0,0,.45);
+}
+
+.dot-btn-active {
+    background-color: white;
+}
+
+.banner-loadingbar {
+    width: 100%;
+    height: 5px;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-top: -5px;
+    padding: 0px;
+}
+
+@keyframes carga {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+.banner-loadingbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFD700; /* Color de la barra de carga */
+    animation: carga 15s linear forwards; /* Duración y tipo de animación */
+  }
+
+/* TABLETS */
+@media (max-width: 768px) {
+    #banner, .banner-item, .img-banner-brightness {
+        height: 400px;
+    }
+    .body-banner {
+        width: 70%;
+        margin-top: 7.5px;
+        padding-top: 15px;
+    }
+    .title-banner h3 {
+        font-size: 25px;
+    }
+    .title-banner h2 {
+        font-size: 35px;
+    }
+    .body-banner p {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .dot-btn {
+        width: 16px;
+        height: 16px;
+    }
+    .dots-navigator {
+        top: 420px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+    #banner, .banner-item, .img-banner-brightness {
+        height: 300px;
+    }
+    .body-banner {
+        width: 90%;
+        margin-top: 5px;
+        padding-top: 0px;
+    }
+    .title-banner h3 {
+        font-size: 20px;
+    }
+    .title-banner h2 {
+        font-size: 27px;
+    }
+    .body-banner p {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .dot-btn {
+        width: 17px;
+        height: 17px;
+    }
+    .dots-navigator {
+        top: 320px;
+    }
+}
+  
