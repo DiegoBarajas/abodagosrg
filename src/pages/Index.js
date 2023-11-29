@@ -7,6 +7,7 @@ import LicenciaFederal from '../components/LicenciaFederal';
 import Contacto from '../components/Contacto';
 import UDG from '../components/UDG';
 import Ubicacion from '../components/Ubicacion';
+import Footer from '../components/Footer';
 
 const Index = () => {
     return (
@@ -19,8 +20,7 @@ const Index = () => {
             <Contacto/>
             <UDG/>
             <Ubicacion/>
-
-            <br/><br/><br/>
+            <Footer/>
         </div>
     )
 }
