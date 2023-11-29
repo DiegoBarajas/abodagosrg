@@ -1,0 +1,96 @@
+#Ubicacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ubicacion-container {
+    width: 70%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-mapa {
+    width: 70%;
+    min-height: 600px;   
+}
+
+.div-data-contacto {
+    width: 30%;
+    min-height: 600px;
+    margin-left: 25px;
+}
+
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+.day {
+    flex: 1;
+    text-align: left;
+}
+  
+.time {
+    flex: 1;
+    text-align: right;
+}
+
+.div-data-contacto h4{
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.div-data-contacto p {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 1000px){
+    .ubicacion-container{
+        width: 75%;
+        padding: 10px;
+    }
+    .div-data-contacto h4, .div-data-contacto p {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width: 768px){
+    .ubicacion-container{
+        width: 80%;
+        padding: 7.5px;
+        flex-direction: column;
+    }
+    .div-mapa, .div-data-contacto{
+        width: 100%;
+    }
+
+    .div-data-contacto h4, .div-data-contacto p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    .ubicacion-container{
+        width: 85%;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .div-mapa, .div-data-contacto{
+        width: 100%;
+    }
+
+    .div-data-contacto h4, .div-data-contacto p {
+        font-size: 16px;
+    }
+}

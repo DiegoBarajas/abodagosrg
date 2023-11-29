@@ -5,6 +5,8 @@ import QuienesSomos from '../components/QuienesSomos';
 import Servicios from '../components/Servicios';
 import LicenciaFederal from '../components/LicenciaFederal';
 import Contacto from '../components/Contacto';
+import UDG from '../components/UDG';
+import Ubicacion from '../components/Ubicacion';
 
 const Index = () => {
     return (
@@ -15,6 +17,8 @@ const Index = () => {
             <Servicios/>
             <LicenciaFederal/>
             <Contacto/>
+            <UDG/>
+            <Ubicacion/>
 
             <br/><br/><br/>
         </div>
