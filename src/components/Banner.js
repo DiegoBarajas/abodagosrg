@@ -3,6 +3,7 @@ import Banner1 from '../assets/Banner1.jpg';
 import Banner2 from '../assets/Banner2.jpg';
 import Banner3 from '../assets/advice.jpg';
 import Banner4 from '../assets/licencia_federal.jpg';
+import Compromiso from '../assets/compromiso.jpg';
 
 import '../styles/Banner.css';
 
@@ -22,21 +23,28 @@ const data = [
         titleSize: 'long',
         
     },{
-        subtitle: 'Abogados',
+        subtitle: 'En',
         title: 'RG Y Asociados',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        img: Banner2
+        body: 'Nos guían valores fundamentales como la ética, la transparencia y el compromiso con nuestros clientes. Nos esforzamos por comprender las necesidades individuales y ofrecer un servicio legal de calidad que genere confianza y tranquilidad en cada paso del proceso.',
+        img: Banner2,
+        subtitleSize: 'small',
+        titleSize: 'small',
     },{
         subtitle: 'Primer asesoría',
         title: 'Gratis',
-        body: 'La primer asesoría es GRATIS, unicamente una por cliente y con una duración maxima de 30 minutos.',
+        body: 'Creemos en brindar un primer acercamiento accesible y sin compromiso a nuestros clientes. Por eso, ofrecemos la primera asesoría gratuita con una duración máxima de 30 minutos. Esto nos permite comprender mejor sus necesidades y ofrecer soluciones personalizadas desde el principio.',
         img: Banner3,
     },{
         subtitle: 'Contamos con',
         title: 'Licencia Federal',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        body: 'Con la licencia federal podemos atender asuntos legales en cualquier estado de la republica.',
         img: Banner4,
         imgPosition: 'top'
+    },{
+        title: 'Nuestro Compromiso',
+        body: 'Cada logro y éxito que hemos alcanzado proviene de nuestra dedicación a la excelencia y al servicio al cliente. Estamos comprometidos a ser su aliado legal confiable, trabajando incansablemente para proteger sus intereses y alcanzar los mejores resultados.',
+        img: Compromiso, 
+        imgPosition: 'center'
     } ];
 
     let interval;
@@ -49,6 +57,10 @@ const data = [
         }
 
         return index;
+    }
+
+    function setIndex(newIndex){
+        index = newIndex;
     }
 
 const Banner = () => {
@@ -105,16 +117,20 @@ const Banner = () => {
 
             if(banner === 0){
                 changeBanner(data.length-1);
+                setIndex(data.length-1);
             }else{
                 changeBanner(banner-1);
+                setIndex(banner-1);
             }
 
         } else if (difference < 0) {
             
             if(banner >= (data.length-1)){
                 changeBanner(0);
+                setIndex(0);
             }else{
                 changeBanner(banner+1);
+                setIndex(banner+1);
             }
 
         }
@@ -124,8 +140,10 @@ const Banner = () => {
               
         if(banner >= (data.length-1)){
             changeBanner(0);
+            setIndex(0);
         }else{
             changeBanner(banner+1);
+            setIndex(banner+1);
         }
         
     };
@@ -134,12 +152,13 @@ const Banner = () => {
               
         if(banner === 0){
             changeBanner(data.length-1);
+            setIndex(data.length-1);
         }else{
             changeBanner(banner-1);
+            setIndex(banner-1);
         }
-        
-    };
 
+    };
     
     return (
         <header id='banner'>

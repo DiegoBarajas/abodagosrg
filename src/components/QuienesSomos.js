@@ -10,7 +10,7 @@ const QuienesSomos = () => {
 
             <section className='box-quienes-somos'>
                 <img src={image} alt='About Us'/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt esse voluptatem sit placeat aliquid distinctio. Illum dolorum non delectus saepe atque eaque ipsum odit vitae quasi obcaecati, inventore tenetur animi sed accusantium nobis quod culpa sint similique modi aliquam iusto architecto est.</p>
+                <p>En RG Y Asociados, con sede en Guadalajara, Jalisco, entendemos que cada situación legal es única y merece una atención personalizada. Desde nuestra fundación, nos hemos comprometido a ofrecer asesoría legal integral y servicios jurídicos adaptados a las necesidades individuales de cada cliente, tanto en Guadalajara como en todo México permitiéndonos brindar soluciones legales sólidas y confiables en una amplia gama de áreas legales.. </p>
             </section>
         </div>
     )

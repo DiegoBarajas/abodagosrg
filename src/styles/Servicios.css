@@ -8,7 +8,7 @@
 }
 
 .container-services {
-    width: 75%;
+    width: 70%;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
@@ -26,7 +26,8 @@
 
 @media (max-width: 956px){
     .container-services {
-        width: 85%
+        width: 75%;
+        gap: 15px 15px; 
     }
 }
 
