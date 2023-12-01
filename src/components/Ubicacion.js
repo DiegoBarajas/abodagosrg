@@ -24,7 +24,7 @@ const Ubicacion = () => {
 
                 <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                     <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-                        <p>Ha ocurrido un error al cargar el mapa <a href="https://maps.app.goo.gl/AExbqYKm2TdFPj49A">Ver mapa</a></p>
+                        <a href="https://maps.app.goo.gl/AExbqYKm2TdFPj49A">Ver mapa</a>
                     </div>
                 </div>
 
