@@ -172,7 +172,7 @@ const Banner = () => {
                         onTouchMove={handleTouchMove}
                         onTouchEnd={handleTouchEnd}
                     >
-                        <img className='img-banner' src={d.img} alt='Banner 1' style={{ objectPosition: d.imgPosition}}/>
+                        <img className='img-banner' src={d.img} alt={d.img} style={{ objectPosition: d.imgPosition}}/>
                         <div className='img-banner-brightness'>
                             <section className='title-banner'>
                                 <h3 className={'h3-banner-'+d.subtitleSize}>{d.subtitle}</h3>
