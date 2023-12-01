@@ -26,8 +26,8 @@ const Contacto = () => {
                 img={Email}
                 alt='Correo Electrónico'
                 title='Correo Electrónico'
-                content='abogados@abogadorg.com'
-                link='mailto:abogados@abogadorg.com'
+                content='contacto@abogadorg.com'
+                link='mailto:contacto@abogadorg.com'
             />
         </div>
     )
