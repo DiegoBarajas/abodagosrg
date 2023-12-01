@@ -68,6 +68,9 @@
     .UDG-img img{
         height: 80%;
     }
+    .UDG-element2{
+        width: 60%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -77,6 +80,9 @@
     .UDG-img img{
         height: 60%;
     }
+    .UDG-element2{
+        width: 70%;
+    }
 }
 
 @media (max-width: 590px) {
@@ -85,6 +91,9 @@
     }
     .UDG-img img{
         height: 50%;
+    }
+    .UDG-element2{
+        width: 75%;
     }
 }
 
@@ -109,6 +118,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .UDG-element2{
+        width: 80%;
     }
 }
   

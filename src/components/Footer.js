@@ -6,15 +6,14 @@ const Footer = () => {
         <footer id='Footer'>
             <div className='footer-cont'>
                 <div className='footer-cont-item'>
-                    <a href='#' className='marginleft25'><span>Teléfono:</span> 33 3658 4706</a>
-                    <a href='#' className='marginleft25'><span>Teléfono:</span> 33 3658 4706</a>
-                    <a href='#' className='marginleft25'><span>Teléfono:</span> 33 3658 4706</a>
+                    <a href='tel:3336584706' target='_BLANK' className='marginleft25' rel="noreferrer"><span>Teléfono:</span> 33 3658 4706</a>
+                    <a href='mailto:abogados@abogadorg.com' target='_BLANK' className='marginleft25' rel="noreferrer"><span>Correo Electrónico:</span> abogados@abogadorg.com</a>
+                    <a href='https://maps.app.goo.gl/AExbqYKm2TdFPj49A' target='_BLANK' className='marginleft25' rel="noreferrer"><span>Dirección:</span> Guillermo Prieto No. 215</a>
 
                 </div>
                 <div className='footer-cont-item'>
-                    <a href='#'><span>Teléfono:</span> 33 3658 4706</a>
-                    <a href='#'><span>Teléfono:</span> 33 3658 4706</a>
-                    <a href='#'><span>Teléfono:</span> 33 3658 4706</a>
+                    <a href='https://www.facebook.com/profile.php?id=61552864001186' target='_BLANK' rel="noreferrer"><span>Facebook:</span> Abogados RG Y Asociados</a>
+                    <a href='https://instagram.com/abogadorg215?igshid=NzZlODBkYWE4Ng==' target='_BLANK' rel="noreferrer"><span>Instagram:</span> @abogadorg215</a>
                 </div>
             </div>
             <div className='footer-cont footer-bottom'>

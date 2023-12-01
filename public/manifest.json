@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "RG y Asociados",
+  "name": "Descubre asesoría legal experta con RG y Asociados, donde nuestros abogados comprometidos ofrecen soluciones confiables para tus necesidades legales. Desde litigios hasta asesoramiento jurídico especializado, confía en nuestra experiencia para proteger tus intereses.",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo192.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

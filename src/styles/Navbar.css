@@ -100,9 +100,13 @@
       row-gap: 5px;
       width: 50px;
       height: 50px;
-      padding: 15px 0px 15px 15px;
+      padding: 17px 0px 15px 15px;
       border: none;
       border-top-right-radius: 10px;
+    }
+
+    .nav  .nav-btn label:active span{
+      background-color: #bebebe;
     }
 
     .nav  .nav-btn  label:hover,.nav  #nav-check:checked ~ .nav-btn  label {
@@ -139,6 +143,11 @@
       line-height: normal;
       margin: auto;
     }
+
+    .nav  .nav-links  a:active {
+      background-color: #1f1f1f;
+      color: #bebebe;
+    }
     
     .nav .nav-links > *:not(:last-child){
       border-bottom: 1px solid rgba(0,0,0,.5); 
@@ -164,6 +173,10 @@
   text-decoration: none;
   font-weight: bold;
 
+}
+
+.a-nav:active {
+  color: #bebebe;
 }
 
 .a-nav:hover {

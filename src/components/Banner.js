@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Banner1 from '../assets/Banner1.jpg';
 import Banner2 from '../assets/Banner2.jpg';
-import Banner3 from '../assets/Banner3.jpg';
-import Banner4 from '../assets/Banner4.jpeg';
+import Banner3 from '../assets/advice.jpg';
+import Banner4 from '../assets/licencia_federal.jpg';
 
 import '../styles/Banner.css';
 
@@ -10,23 +10,27 @@ const data = [
     {
         subtitle: 'Abogados',
         title: 'RG Y Asociados',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        img: Banner1
+        body: '',
+        img: Banner1,
+        subtitleSize: 'long',
+        titleSize: 'long',
+        
     },{
         subtitle: 'Abogados',
         title: 'RG Y Asociados',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         img: Banner2
     },{
-        subtitle: 'Ejemplo',
-        title: 'Texto de ejemplo',
-        body: 'Hay varios sitios web donde puedes encontrar imágenes de alta definición para banners sin licencia. Algunos de estos sitios ofrecen fotos gratuitas de alta calidad que puedes usar sin preocuparte por derechos de autor. ',
-        img: Banner3
+        subtitle: 'Primer asesoría',
+        title: 'Gratis',
+        body: 'La primer asesoría es GRATIS, unicamente una por cliente y con una duración maxima de 30 minutos.',
+        img: Banner3,
     },{
-        subtitle: 'Abogados',
-        title: 'RG Y Asociados',
+        subtitle: 'Contamos con',
+        title: 'Licencia Federal',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        img: Banner4
+        img: Banner4,
+        imgPosition: 'top'
     } ];
 
     let interval;
@@ -122,11 +126,11 @@ const Banner = () => {
                         onTouchMove={handleTouchMove}
                         onTouchEnd={handleTouchEnd}
                     >
-                        <img className='img-banner' src={d.img} alt='Banner 1'/>
+                        <img className='img-banner' src={d.img} alt='Banner 1' style={{ objectPosition: d.imgPosition}}/>
                         <div className='img-banner-brightness'>
                             <section className='title-banner'>
-                                <h3>{d.subtitle}</h3>
-                                <h2>{d.title}</h2>
+                                <h3 className={'h3-banner-'+d.subtitleSize}>{d.subtitle}</h3>
+                                <h1 className={'h1-banner-'+d.titleSize}>{d.title}</h1>
                             </section>
 
                             <section className='body-banner'>

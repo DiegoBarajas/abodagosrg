@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 15px;
 }
 
 .footer-cont {
@@ -39,14 +40,17 @@
     font-weight: bold;
 }
 
+.footer-bottom {
+    margin-bottom: 5px;
+}
+
 .footer-bottom p {
     color: white;
-    bottom: 5px;
     width: 100%;
     text-align: center;
     padding: 0px;
     margin: 0px;
-
+    font-size: 13px;
 }
 
 .marginleft25 {
@@ -67,13 +71,14 @@
         width: 100%;
     }
     .footer-bottom p{
-        margin-top: 10px;
+        font-size: 12px;
+        margin-top: 20px;
     }
     #Footer{
         padding-top: 15px;
     }
     .footer-cont-item a{
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         width: 100%;
         margin-bottom: 10px;

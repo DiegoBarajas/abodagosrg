@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/Ubicacion.css';
 import Title from './Title';
 
-
     var setting = {"query":"Guillermo Prieto 215, Centro, Guadalajara, Jal., México","width":'100%',"height":500,"satellite":false,"zoom":17,"placeId":"ChIJB4RBs-exKIQR-vPhiXk-88A","cid":"0xc0f33e7989e1f3fa","coords":[20.6860903,-103.3490502],"lang":"es","queryString":"Guillermo Prieto 215, Centro, Guadalajara, Jal., México","centerCoord":[20.6860903,-103.3490502],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1035785"};
     var d = document;
     var s = d.createElement('script');
@@ -43,7 +42,7 @@ const Ubicacion = () => {
                         <span class="time">9:30 - 15:00</span>
                     </p>
                     <p class="schedule">
-                        <span class="day">Miercoles</span>
+                        <span class="day">Miércoles</span>
                         <span class="time">9:30 - 15:00</span>
                     </p>
                     <p class="schedule">

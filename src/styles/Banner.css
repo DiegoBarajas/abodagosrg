@@ -37,7 +37,7 @@
 
 }
 
-.title-banner h2 {
+.title-banner h1 {
     padding: 0px;
     margin: -10px;
     font-size: 60px;
@@ -92,6 +92,30 @@
     padding: 0px;
 }
 
+.h3-banner-small {
+    font-size: 30px !important;
+}
+
+.h3-banner-medium {
+    font-size: 45px !important;
+}
+
+.h3-banner-long {
+    font-size: 55px !important;
+}
+
+.h1-banner-small {
+    font-size: 45px !important;
+}
+
+.h1-banner-medium {
+    font-size: 68px !important;
+}
+
+.h1-banner-long {
+    font-size: 75px !important;
+}
+
 @keyframes carga {
     0% {
       width: 0%;
@@ -125,7 +149,7 @@
     .title-banner h3 {
         font-size: 25px;
     }
-    .title-banner h2 {
+    .title-banner h1 {
         font-size: 35px;
     }
     .body-banner p {
@@ -138,6 +162,30 @@
     }
     .dots-navigator {
         top: 420px;
+    }
+    .h3-banner-small {
+        font-size: 17px !important;
+    }
+    
+    .h3-banner-medium {
+        font-size: 30px !important;
+    }
+    
+    .h3-banner-long {
+        font-size: 38px !important;
+    }
+    
+    .h1-banner-small {
+        font-size: 25px !important;
+        padding-top: 5px !important;
+    }
+    
+    .h1-banner-medium {
+        font-size: 41px !important;
+    }
+    
+    .h1-banner-long {
+        font-size: 46px !important;
     }
 }
 
@@ -154,7 +202,7 @@
     .title-banner h3 {
         font-size: 20px;
     }
-    .title-banner h2 {
+    .title-banner h1 {
         font-size: 27px;
     }
     .body-banner p {
@@ -167,5 +215,29 @@
     }
     .dots-navigator {
         top: 320px;
+    }
+
+    .h3-banner-small {
+        font-size: 14px !important;
+    }
+
+    .h3-banner-medium {
+        font-size: 22px !important;
+    }
+
+    .h3-banner-long {
+        font-size: 26px !important;
+    }
+
+    .h1-banner-small {
+        font-size: 23px !important;
+    }
+
+    .h1-banner-medium {
+        font-size: 30px !important;
+    }
+
+    .h1-banner-long {
+        font-size: 35px !important;
     }
 }  

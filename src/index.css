@@ -1,3 +1,8 @@
+* {
+  -webkit-tap-highlight-color: transparent; /* Para navegadores basados en WebKit (Safari, Chrome) */
+  tap-highlight-color: transparent;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
