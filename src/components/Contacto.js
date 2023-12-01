@@ -27,7 +27,7 @@ const Contacto = () => {
                 alt='Correo Electrónico'
                 title='Correo Electrónico'
                 content='contacto@abogadorg.com'
-                link='mailto:contacto@abogadorg.com'
+                link='mailto:contacto+web@abogadorg.com'
             />
         </div>
     )

@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='footer-cont'>
                 <div className='footer-cont-item'>
                     <a href='tel:3336584706' target='_BLANK' className='marginleft25' rel="noreferrer"><span>Teléfono:</span> 33 3658 4706</a>
-                    <a href='mailto:contacto@abogadorg.com' target='_BLANK' className='marginleft25' rel="noreferrer"><span>Correo Electrónico:</span> contacto@abogadorg.com</a>
+                    <a href='mailto:contacto+mail@abogadorg.com' target='_BLANK' className='marginleft25' rel="noreferrer"><span>Correo Electrónico:</span> contacto@abogadorg.com</a>
                     <a href='https://maps.app.goo.gl/AExbqYKm2TdFPj49A' target='_BLANK' className='marginleft25' rel="noreferrer"><span>Dirección:</span> Guillermo Prieto No. 215</a>
 
                 </div>
