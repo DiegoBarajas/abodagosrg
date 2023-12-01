@@ -13,6 +13,12 @@
 }
 
 #InternetConnection p {
+    font-weight: bold;
+    color: white;
+}
+
+
+#InternetConnection p span {
     font-family: bold;
     color: white;
 }

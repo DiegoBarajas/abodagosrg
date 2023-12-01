@@ -6,7 +6,7 @@ import '../styles/QuienesSomos.css';
 const QuienesSomos = () => {
     return (
         <div id='QuienesSomos'>
-            <Title>Quienes Somos</Title>
+            <Title>Quiénes somos</Title>
 
             <section className='box-quienes-somos'>
                 <img src={image} alt='About Us'/>

@@ -26,7 +26,7 @@ const Navbar = () => {
                 </div>
                 <div className="nav-links">
                     <a href='#banner' onClick={() => setChecked(false)}>Inicio</a>
-                    <a href='#QuienesSomos' onClick={() => setChecked(false)}>Quienes somos</a>
+                    <a href='#QuienesSomos' onClick={() => setChecked(false)}>Quiénes somos</a>
                     <a href='#Servicios' onClick={() => setChecked(false)}>Servicios</a>
                     <a href='#Contacto' onClick={() => setChecked(false)}>Contacto</a>
                     <a href='#Ubicacion' onClick={() => setChecked(false)}>Ubicación</a>

@@ -17,7 +17,7 @@ const InternetConnection = () => {
 
     return !isConnected
     ?   <div id='InternetConnection'>
-            <p>En este momento no tienes conexión a internet</p>
+            <p>⚠️ En este momento no tienes conexión a internet ⚠️</p>
         </div>
     :   <></>
 }
