@@ -12,7 +12,7 @@
 .img-banner-brightness{
     width: 100%;
     height: 600px;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(0,0,0, 0.6);
     position: absolute;
     top: 60px;
     display: flex;
@@ -33,7 +33,8 @@
     padding: 0px;
     margin: 0px;
     font-size: 40px;
-    filter: drop-shadow(0px 0px 1.5px rgba(255, 255, 255, 0.75));
+    color: white;
+    filter: drop-shadow(0px 0px 1.5px rgba(0,0,0, 0.75));
 
 }
 
@@ -41,7 +42,8 @@
     padding: 0px;
     margin: -10px;
     font-size: 60px;
-    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.75));
+    color: white;
+    filter: drop-shadow(0px 0px 1.5px rgba(0,0,0, 0.75));
 
 }
 
@@ -56,7 +58,8 @@
     font-size: 23px;
     font-weight: bold;
     text-align: justify;
-    filter: drop-shadow(0px 0px 1.5px white);
+    color: white;
+    filter: drop-shadow(0px 0px 1.5px rgba(0,0,0, 0.75));
 }
 
 .dots-navigator {
@@ -114,6 +117,68 @@
 
 .h1-banner-long {
     font-size: 75px !important;
+}
+
+.banner-btns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner-btns button {
+    border: none;
+    width: 100px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.banner-btn-prev {
+    margin-left: 15px;
+    opacity: 0%;
+    background-image: url(../assets/prev.svg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 20px 0 0 20px;
+}
+
+.banner-btn-next {
+    margin-right: 15px;
+    opacity: 0%;
+    background-image: url(../assets/next.svg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0 ;
+}
+
+#banner:hover .banner-item .img-banner-brightness .banner-btns button {
+    opacity: 10%;
+    animation: aparecer .25s;
+}
+
+#banner .banner-item .img-banner-brightness .banner-btns button {
+    opacity: 0%;
+    animation: desaparecer .2s ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 10%;
+    }
+}
+
+@keyframes desaparecer {
+    0% {
+        opacity: 10%;
+    }
+    100% {
+        opacity: 0%;
+    }
 }
 
 @keyframes carga {
@@ -187,6 +252,19 @@
     .h1-banner-long {
         font-size: 46px !important;
     }
+    .banner-btns button {
+        border: none;
+        width: 60px;
+        height: 90px;
+        background-color: rgba(255, 255, 255, .75);
+    }
+    .banner-btn-prev {
+        margin-left: 5px;
+    }
+    
+    .banner-btn-next {
+        margin-right: 5px;
+    }
 }
 
 /* CELULARES */
@@ -239,5 +317,8 @@
 
     .h1-banner-long {
         font-size: 35px !important;
+    }
+    .banner-btns button {
+        display: none;
     }
 }  

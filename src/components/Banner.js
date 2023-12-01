@@ -6,6 +6,12 @@ import Banner4 from '../assets/licencia_federal.jpg';
 
 import '../styles/Banner.css';
 
+const preloadImages = (images) => {
+    images.forEach(image => {
+      new Image().src = image.img;
+    });
+};
+
 const data = [ 
     {
         subtitle: 'Abogados',
@@ -54,6 +60,8 @@ const Banner = () => {
             setBanner(addIndex());
             resetAnimation()
         }, 15000);
+
+        preloadImages(data);
     
         // Limpieza del intervalo al desmontar el componente
         return () => clearInterval(interval);
@@ -84,13 +92,13 @@ const Banner = () => {
 
     const handleTouchStart = (event) => {
         setTouchStartX(event.touches[0].clientX);
-      };
+    };
     
-      const handleTouchMove = (event) => {
+    const handleTouchMove = (event) => {
         setTouchEndX(event.touches[0].clientX);
-      };
+    };
     
-      const handleTouchEnd = () => {
+    const handleTouchEnd = () => {
         const difference = touchEndX - touchStartX;
 
         if (difference > 0) {
@@ -110,8 +118,27 @@ const Banner = () => {
             }
 
         }
-      };
+    };
     
+    const handleNext = () => {
+              
+        if(banner >= (data.length-1)){
+            changeBanner(0);
+        }else{
+            changeBanner(banner+1);
+        }
+        
+    };
+
+    const handlePrev = () => {
+              
+        if(banner === 0){
+            changeBanner(data.length-1);
+        }else{
+            changeBanner(banner-1);
+        }
+        
+    };
 
     
     return (
@@ -131,6 +158,15 @@ const Banner = () => {
                             <section className='title-banner'>
                                 <h3 className={'h3-banner-'+d.subtitleSize}>{d.subtitle}</h3>
                                 <h1 className={'h1-banner-'+d.titleSize}>{d.title}</h1>
+                            </section>
+
+                            <section className='banner-btns'>
+                                <button className='banner-btn-prev'
+                                    onClick={handlePrev}
+                                ></button>
+                                <button className='banner-btn-next'
+                                    onClick={handleNext}
+                                ></button>
                             </section>
 
                             <section className='body-banner'>
