@@ -16,7 +16,7 @@ const preloadImages = (images) => {
 const data = [ 
     {
         subtitle: 'Abogados',
-        title: 'RG Y Asociados',
+        title: 'RG & ASOCIADOS',
         body: '',
         img: Banner1,
         subtitleSize: 'long',
@@ -24,7 +24,7 @@ const data = [
         
     },{
         subtitle: 'En',
-        title: 'RG Y Asociados',
+        title: 'RG & ASOCIADOS',
         body: 'Nos guían valores fundamentales como la ética, la transparencia y el compromiso con nuestros clientes. Nos esforzamos por comprender las necesidades individuales y ofrecer un servicio legal de calidad que genere confianza y tranquilidad en cada paso del proceso.',
         img: Banner2,
         subtitleSize: 'small',

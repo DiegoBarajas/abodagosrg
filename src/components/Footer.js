@@ -12,7 +12,7 @@ const Footer = () => {
 
                 </div>
                 <div className='footer-cont-item'>
-                    <a href='https://www.facebook.com/profile.php?id=61552864001186' target='_BLANK' rel="noreferrer"><span>Facebook:</span> Abogados RG Y Asociados</a>
+                    <a href='https://www.facebook.com/profile.php?id=61552864001186' target='_BLANK' rel="noreferrer"><span>Facebook:</span> Abogados RG & ASOCIADOS</a>
                     <a href='https://instagram.com/abogadorg215?igshid=NzZlODBkYWE4Ng==' target='_BLANK' rel="noreferrer"><span>Instagram:</span> @abogadorg215</a>
                 </div>
             </div>

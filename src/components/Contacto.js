@@ -3,6 +3,8 @@ import Title from './Title';
 import Lacito from './Lacito';
 import Phone from '../assets/phone.png';
 import Email from '../assets/email.png';
+import whatsapp from '../assets/whatsapp.png';
+
 import '../styles/Contacto.css';
 
 const Contacto = () => {
@@ -13,6 +15,14 @@ const Contacto = () => {
                     marginTop: '-20px'
                 }}
             >Contacto</Title>
+
+            <Lacito
+                img={whatsapp}
+                alt='WhatsApp'
+                title='WhatsApp'
+                content='+52 33 1009 4930'
+                link='https://api.whatsapp.com/send?phone=5213310094930'
+            />
 
             <Lacito
                 img={Phone}
