@@ -12,8 +12,10 @@ const Footer = () => {
 
                 </div>
                 <div className='footer-cont-item'>
+                    <a href='https://api.whatsapp.com/send?phone=5213310094930' target='_BLANK' rel="noreferrer"><span>WhatsApp:</span> +52 33 1009 4930</a>
                     <a href='https://www.facebook.com/profile.php?id=61552864001186' target='_BLANK' rel="noreferrer"><span>Facebook:</span> Abogados RG & ASOCIADOS</a>
                     <a href='https://instagram.com/abogadorg215?igshid=NzZlODBkYWE4Ng==' target='_BLANK' rel="noreferrer"><span>Instagram:</span> @abogadorg215</a>
+
                 </div>
             </div>
             <div className='footer-cont footer-bottom'>
